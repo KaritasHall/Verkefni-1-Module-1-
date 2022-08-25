@@ -1,0 +1,90 @@
+/*Color Palette*/
+:root {
+    --background-color: #EDC7B7;
+    --link-color: #123C69;
+    --header-color: #AC3B61;
+    --hover-color: tomato;
+}
+/*Reference to font in html, aligned text and set background color*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    background-color: var(--background-color);
+}
+/*Aligned text to center and added space between sections*/
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+/*Set color on headers and aligned to center*/
+h1, h2 {
+    color: var(--header-color);
+    text-align: center;
+}
+/*Set size on heading 1 and added space under it*/
+h1 {
+    font-size: 36px;
+    margin-bottom: 36px;
+}
+/*Adjusted heading 2 to match <li> elements*/
+h2 {
+    text-align: left;
+    min-width: 280px;
+}
+/*Adjusted <li> text to give a justified look*/
+li {
+    min-width: 280px;
+    text-align: left;
+
+}
+/*Rounded corners on picture*/
+#cupcake-picture {
+    border-radius: 8px;
+}
+
+/*Set width on intro text to better match width on #cupcake-picture*/
+#intro {
+    max-width: 400px;
+}
+/*Used flex to add space between logo and nav link and centered within box. Added border and padding on bottom*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #123C69;
+    padding-bottom: 16px;
+}
+/*Set size for logo in header and added border/padding to make it pop*/
+#logo {
+    height: 48px;
+    width: auto;
+    border: 2px solid black;
+    background-color: white;
+    padding: 8px;
+}
+/*Added hover function to display color on nav links*/
+a:hover {
+    color: var(--hover-color);
+}
+/*Removed default color from nav links and set color from palette, and format to bold*/
+a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-weight: bold;
+}
+/*Added border to footer and padding/margin to create space*/
+footer {
+    border-top: 2px solid #123C69;
+    margin-top: 128px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+
